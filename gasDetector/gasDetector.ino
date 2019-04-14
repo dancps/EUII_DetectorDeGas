@@ -72,7 +72,7 @@ void loop() {
         }
         if(valor_dig == 0){
             lcd.setCursor(0,0);
-            lcd.print("Gas detectado");
+            lcd.print("Gas detectado   ");
             lcd.setCursor(0,1);
             lcd.print(valor_analog);
             digitalWrite(vermelho,LOW);
@@ -83,7 +83,7 @@ void loop() {
         else{
             //Serial.println("");
             lcd.setCursor(0,0);
-            lcd.print("Gas ausente");
+            lcd.print("Gas ausente     ");
             lcd.setCursor(0,1);
             lcd.print(valor_analog);
             digitalWrite(vermelho,HIGH);
